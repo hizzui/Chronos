@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dp"
+    android:layout_margin="4dp"
+    android:id="@+id/task_items_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.80"
+            android:scaleY="1.80"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingStart="16dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/taskTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+                <TextView
+                    android:id="@+id/deadlineTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deadline_view"
+                    android:textAppearance="@android:style/TextAppearance.Small"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:id="@+id/editorTaskView"
+                android:paddingTop="8dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dot_editor"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/editor" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

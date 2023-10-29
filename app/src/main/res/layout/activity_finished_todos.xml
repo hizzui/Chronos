@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ToDoFragment"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/todoToolbar"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"  />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_todo_finished"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recyclerview_task_items"/>
+</LinearLayout>

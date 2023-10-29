@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ProDue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_1">To-Do</string>
+    <string name="tab_2">Timer</string>
+    <string name="tab_3">Graph</string>
+    <string name="task_title">Task Title</string>
+    <string name="deadline">Set Deadline</string>
+    <string name="category">Category</string>
+    <string name="repeats">Repeats</string>
+    <string name="notes">Notes</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="create_todo">Create To-Do item</string>
+    <string name="save">Save</string>
+    <string name="add_task">Add new task</string>
+    <string name="empty_not_saved">The task was not saved because of missing Task Title</string>
+    <string name="finished_todos">Finished To-Do\'s</string>
+    <string name="timer">Timer</string>
+    <string name="add_category">Add New Category</string>
+    <string name="create_timer">Create New Category</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="stop_timer">Stop Timer</string>
+    <string name="category_name">Category Name</string>
+    <string name="total_time">Total time used: </string>
+    <string name="editor">Edit</string>
+    <string name="deadline_view">Deadline</string>
+    <string name="number_of_categories">Number of tasks finished in each category:</string>
+    <string name="number_of_tasks">Number of tasks finished in total:</string>
+    <string name="hours_used">Total Number of hours used:</string>
+    <string name="produe_todo">ProDue To-Do</string>
+    <string name="choose_color">Choose color</string>
+    <string name="saved">It has been saved</string>
+    <string name="no_categories">No Categories</string>
+    <string name="empty_not_saved_timer">The category was not saved because of missing category Title</string>
+    <string name="delete">Delete</string>
+</resources>

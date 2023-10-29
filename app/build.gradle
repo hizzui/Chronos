@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.produe"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    // MPAndroidChart - external library
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+
+    // ColorPicker - external library
+    implementation 'petrov.kristiyan:colorpicker-library:1.1.10'
+
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+    // Room components
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+
+    // UI
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+    // Testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.produe">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission android:name="com.example.produe.PERMISSION_READ_TASKS" />
+
+    <uses-permission android:name="com.example.produe.PERMISSION_READ_TASKS" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.ScreenSliderPagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddToDo"
+            android:parentActivityName=".ui.main.ScreenSliderPagerActivity" />
+        <activity android:name=".AddTimer"
+            android:parentActivityName=".ui.main.ScreenSliderPagerActivity" />
+        <activity android:name=".FinishedToDoActivity"
+            android:parentActivityName=".ui.main.ScreenSliderPagerActivity" />
+        <service android:name=".TimerService"
+            android:exported="false"/>
+        <service android:name=".widget.ToDoWidgetRemoteViewsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <receiver android:name=".widget.ToDoWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.produe.app.ACTION_DATA_UPDATED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/todo_widget_info" />
+        </receiver>
+        <provider
+            android:authorities="com.example.produe"
+            android:name=".ToDoContentProvider"
+            android:exported="false" />
+    </application>
+
+
+
+</manifest>
