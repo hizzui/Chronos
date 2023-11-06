@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProDue</string>
+    <string name="app_name">Chronos</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -30,7 +30,7 @@
     <string name="number_of_categories">Number of tasks finished in each category:</string>
     <string name="number_of_tasks">Number of tasks finished in total:</string>
     <string name="hours_used">Total Number of hours used:</string>
-    <string name="produe_todo">ProDue To-Do</string>
+    <string name="produe_todo">Chronos To-Do</string>
     <string name="choose_color">Choose color</string>
     <string name="saved">It has been saved</string>
     <string name="no_categories">No Categories</string>
